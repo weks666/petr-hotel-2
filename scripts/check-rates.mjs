@@ -15,7 +15,13 @@ for(const lang of ['ru','en']){
  assert.equal((catalog.match(/data-rate-id=/g)||[]).length,15);
  for(const room of rooms){const page=await readFile(`dist/${prefix}rooms/${room.slug}/index.html`,'utf8');assert.ok(page.includes(`data-rate-id="${room.id}"`));}
  const home=await readFile(`dist/${prefix}index.html`,'utf8');
+ assert.match(home,/main\.js\?v=[a-f0-9]{12}/);
  assert.ok(!home.includes('popovertarget'));assert.ok(!home.includes('class="replay"'));
  for(const [tag]of home.matchAll(/<dialog[^>]*data-popup[^>]*>/g))assert.ok(tag.includes(' hidden'), 'A popup must be hidden before JavaScript loads');
 }
+for(const module of ['main.js','booking.js','calendar.js']){
+ const code=await readFile(`dist/assets/${module}`,'utf8');
+ assert.ok(!/(?:from|import)\s*['"]\.\/[^'"]+\.js['"]/.test(code),'Every browser module import needs the release version');
+}
+assert.match(await readFile('dist/assets/main.js','utf8'),/\.json\?v=[a-f0-9]{12}/);
 console.log('Dated total prices, all room IDs and explicit popup visibility verified.');
