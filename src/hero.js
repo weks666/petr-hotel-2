@@ -11,10 +11,7 @@ if(hero){
  function layout(){let narrow=mobile.matches;hero.toggleAttribute('data-mobile',narrow);svg.setAttribute('viewBox',narrow?'0 0 390 460':'0 0 1440 650');let geometry=narrow?[[0,0,390,430],[27,88,338,176],[0,105,172,258],[192,166,198,198]]:[[-20,0,1480,600],[355,235,740,386],[4,-5,438,657],[955,172,480,480]];svg.querySelectorAll('.scene-layer image').forEach((im,i)=>{['x','y','width','height'].forEach((attr,k)=>im.setAttribute(attr,geometry[i][k]))});blooms.setAttribute('transform',narrow?'translate(-12 -46) scale(.29 .73)':'');}
  function paint(p){hero.dataset.progress=p.toFixed(3);[...blooms.children].forEach((el,i)=>{let [x,y,delay,scale]=patterns[i],q=Math.max(0,(p-delay)/(1-delay));let radius=(Math.pow(q,1.45)*820+.001)*scale;el.setAttribute('transform',`translate(${x} ${y}) scale(${radius})`)});if(p>=1){color.classList.add('is-complete');hero.dataset.state='complete';finished=true;store.set()}else{color.classList.remove('is-complete');hero.dataset.state=p===0?'ink':'wash';finished=false}}
  function animate(now){if(!active){start=0;return}if(!start)start=now;let p=Math.min(1,(now-start)/1800);paint(p);if(p<1)raf=requestAnimationFrame(animate)}
- function replay(){cancelAnimationFrame(raf);if(reduced.matches||!active){paint(1);return}start=0;paint(0);raf=requestAnimationFrame(animate)}
  layout();mobile.addEventListener('change',layout);
- hero.querySelector('.replay').addEventListener('click',replay);
- document.addEventListener('keydown',e=>{if(e.key.toLowerCase()==='r'&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName))replay()});
  if(reduced.matches||store.get()&&!params.has('scene'))paint(1);else if(params.get('scene')==='ink')paint(0);else if(params.get('scene')==='wash')paint(.51);else if(params.get('scene')==='color')paint(1);else{
    paint(0);Promise.all([...svg.querySelectorAll('image')].map(el=>new Promise(resolve=>{let im=new Image();im.onload=resolve;im.onerror=resolve;im.src=el.getAttribute('href')}))).then(()=>{if(reduced.matches)paint(1);else raf=requestAnimationFrame(animate)});
  }

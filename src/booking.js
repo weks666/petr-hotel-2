@@ -1,3 +1,4 @@
+import {closePopup} from './popups.js';
 import {setupCalendar} from './calendar.js';
 import {parseDate, addDays, nights, validRange} from './stay-dates.js';
 
@@ -43,7 +44,7 @@ $$('[data-booking]').forEach(f=>{
     save();sync(f);
   });
   $('[data-promo]',f).addEventListener('input',e=>{stay.promo=e.target.value;save();sync(f);});
-  $('[data-promo]',f).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('.promo-popover',f).hidePopover();$('[data-promo-label]',f.parentElement).parentElement.focus();}});
+  $('[data-promo]',f).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();closePopup($('.promo-popover',f));$('[data-promo-label]',f.parentElement).parentElement.focus();}});
   f.addEventListener('submit',e=>{
     const error=$('.form-error',f);
     if(!validRange(stay.in,stay.out,today())){

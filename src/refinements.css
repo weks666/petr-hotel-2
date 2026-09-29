@@ -163,3 +163,14 @@
 .vtx-credit{display:inline-flex;align-items:center;justify-content:center;gap:5px;font:400 12px/1.5 system-ui,sans-serif;color:#686159;text-decoration:none;width:max-content;max-width:100%}.vtx-credit .vtx-mark{font-size:15px;font-weight:600;margin-right:3px}.vtx-credit .vtx-name{color:#7C5CFF}.vtx-credit:hover{text-decoration:underline}.vtx-credit:focus-visible{outline:2px solid #7C5CFF;outline-offset:5px}
 
 .footer .vtx-credit{grid-column:1/-1;justify-self:center;margin-top:6px}
+
+/* Compatibility panels: never rely on native popover visibility. */
+[data-popup][hidden],.popup-backdrop[hidden]{display:none!important}
+[data-popup]{z-index:1001;max-height:calc(100svh - 32px);overflow:auto}
+.popup-backdrop{position:fixed;inset:0;z-index:1000;background:#302d2944}
+@supports not (height:100svh){[data-popup]{max-height:calc(100vh - 32px)}}
+
+[data-popup]::backdrop{background:#302d2955}
+[data-popup]:not([open]){display:none}
+.guests-popover{translate:none;transform:translate(-50%,-50%)}
+[data-popup].popup-fallback{position:relative;inset:auto;transform:none;translate:none;margin:20px auto;z-index:2}

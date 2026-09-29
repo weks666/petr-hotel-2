@@ -1,3 +1,4 @@
+import './popups.js';
 import './booking.js';
 const lang=document.documentElement.lang,english=lang==='en',t=(ru,en)=>english?en:ru,base=new URL('../',import.meta.url).pathname+(english?'en/':'');
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
