@@ -1,0 +1,13 @@
+.DS_Store
+*.log
+.sites-runtime/
+.openai/
+release/
+
+node_modules/
+dist/
+evidence/
+assets-source/
+research/*
+!research/photo-manifest.json
+.env*

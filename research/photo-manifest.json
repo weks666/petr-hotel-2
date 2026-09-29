@@ -1,0 +1,652 @@
+[
+  {
+    "name": "Стандарт",
+    "id": "53687",
+    "photos": [
+      {
+        "src": "/assets/rooms/53687-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/53687/638810108978420593-92791e26-9e8c-41f0-ab7d-b6afec24be24",
+        "alt": "Стандарт — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/53687-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53687/638810107671195886-2e31f4e4-0e5b-43b2-bf98-0d3085480759",
+        "alt": "Стандарт — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/53687-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53687/638810108978259842-02c6ca4b-d264-457f-9a9f-d87bf9ca4550",
+        "alt": "Стандарт — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/53687-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53687/638810107673173551-90589770-770c-4276-8ff5-2090f04d1471",
+        "alt": "Стандарт — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/53687-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53687/638810108977935525-40202e5a-d8d2-4ac2-912e-4ee49921f8d8",
+        "alt": "Стандарт — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/53687-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53687/638810108217665508-49d4f2b8-7339-436b-93ea-d541eb2a59c7",
+        "alt": "Стандарт — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/53687-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53687/638810110272521287-7cd5c8b0-1a8b-4727-a326-b472169084e1",
+        "alt": "Стандарт — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/53687-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53687/638810110273098964-01c81dbc-3134-4488-bf3b-c7cfd4d2033b",
+        "alt": "Стандарт — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Супериор",
+    "id": "53688",
+    "photos": [
+      {
+        "src": "/assets/rooms/53688-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/53688/638810111679270504-336dff54-5fde-4e21-871a-df4efabc08e7",
+        "alt": "Супериор — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/53688-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53688/638810111680798172-949688c0-1c1f-496a-bd46-b3b09000b9c5",
+        "alt": "Супериор — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/53688-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53688/638810111681951810-af6ee75f-0b65-4564-956f-7b77ba26bf9c",
+        "alt": "Супериор — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/53688-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53688/638810111684805746-a481c168-c708-4fbb-b7f6-f6bc07b678ac",
+        "alt": "Супериор — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/53688-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53688/638810111684819367-8b65fecf-2a0d-4ead-b428-8d8a06c89c8f",
+        "alt": "Супериор — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/53688-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53688/638810111684278420-549b5dc1-042d-4162-bdf9-d8f1f7145126",
+        "alt": "Супериор — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/53688-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53688/638810111685379637-cb21a05e-fce5-483c-8b4c-e68636eb7521",
+        "alt": "Супериор — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/53688-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53688/638893007533042654-ea5f0410-f5c5-4024-8b76-dba75f7d1060",
+        "alt": "Супериор — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Делюкс",
+    "id": "53689",
+    "photos": [
+      {
+        "src": "/assets/rooms/53689-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/53689/636407406601123023-a37a0627-95db-42aa-81de-0ad3fbedb740",
+        "alt": "Делюкс — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/53689-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53689/636407406611471469-107ec899-2f44-45ac-835e-a1eab32cc6e0",
+        "alt": "Делюкс — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/53689-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53689/636407406604894169-61dd563d-ab93-40a6-a9e0-4d96ea3295e4",
+        "alt": "Делюкс — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/53689-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53689/637727007035134361-86574ae3-ae16-4ed6-b1fa-3cf4a9a53d29",
+        "alt": "Делюкс — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/53689-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53689/637727007031102530-8a64b4bf-0a16-49b8-97af-a92918b97587",
+        "alt": "Делюкс — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/53689-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53689/639051525358288991-7f3f5e72-977a-46b3-b3ed-dba5751b81b9",
+        "alt": "Делюкс — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/53689-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53689/637727007017211096-f1f5e4af-93c6-4411-95c6-3e594d626b42",
+        "alt": "Делюкс — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/53689-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53689/639051525356547668-a8ee65c2-c3e1-491a-a774-49049040105a",
+        "alt": "Делюкс — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Делюкс Гранд",
+    "id": "54366",
+    "photos": [
+      {
+        "src": "/assets/rooms/54366-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/54366/638840762916484168-bdcdd474-e27b-46b7-9a60-596ebe6eff15",
+        "alt": "Делюкс Гранд — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/54366-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54366/638840762922583643-fb660f02-e323-4c95-99cb-72475406d872",
+        "alt": "Делюкс Гранд — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/54366-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54366/638840762916872484-59627f3d-fe9e-4bef-a3b3-2804c7cb1b60",
+        "alt": "Делюкс Гранд — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/54366-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54366/638840762918579581-9a592121-0571-4b64-bd86-c05c61a1d0d8",
+        "alt": "Делюкс Гранд — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/54366-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54366/638840762921022489-2bea7357-ddb2-40ec-bfa7-08bc0ca345b6",
+        "alt": "Делюкс Гранд — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/54366-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54366/639051524256499966-2dd4e7b9-2dca-4525-9951-f3575e4a92f6",
+        "alt": "Делюкс Гранд — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/54366-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54366/638840762919048429-876ae2da-ef46-404a-b4d8-92b81595fa96",
+        "alt": "Делюкс Гранд — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/54366-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54366/638840764688023883-16d347ef-2dbb-4b49-9ff5-a2c2d70a4aa7",
+        "alt": "Делюкс Гранд — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Студио",
+    "id": "53691",
+    "photos": [
+      {
+        "src": "/assets/rooms/53691-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/53691/636407446474245625-2eba27be-960d-454b-a0ff-f3ccbfec921b",
+        "alt": "Студио — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/53691-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53691/636407446479555622-3f673524-e85c-41f1-97ea-fa52d37959ed",
+        "alt": "Студио — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/53691-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53691/636407446481400560-ef4ac0c9-cebd-4cb9-866c-1db597af7f9c",
+        "alt": "Студио — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/53691-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53691/636407446484864550-5d85dc83-f721-4117-9d97-9e61dae32273",
+        "alt": "Студио — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/53691-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53691/636407446466950563-949013b0-eac4-4886-9aaa-1ef6214bceba",
+        "alt": "Студио — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/53691-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53691/636407446470597273-18dc1148-7186-4516-b3c0-9786d6609d37",
+        "alt": "Студио — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/53691-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53691/639051542012941191-1bbc9edd-ae7c-4915-9b0d-a0a4319ce1c1",
+        "alt": "Студио — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/53691-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53691/639051543731818224-942082af-1f62-49a2-892d-b0277a026e88",
+        "alt": "Студио — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Делюкс Адмиралтейский",
+    "id": "54367",
+    "photos": [
+      {
+        "src": "/assets/rooms/54367-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/54367/638841573399548268-0944cb0e-67d6-496b-95ec-55960dee7265",
+        "alt": "Делюкс Адмиралтейский — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/54367-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54367/638841573400609827-966b5e60-61ff-4336-9f5e-8d66d0ff1467",
+        "alt": "Делюкс Адмиралтейский — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/54367-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54367/638841573398350928-f4da823b-015b-4a33-9b1a-6d5a2a1de6ca",
+        "alt": "Делюкс Адмиралтейский — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/54367-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54367/638841573401589671-be909ff5-8e73-4b1b-9500-452f9301f751",
+        "alt": "Делюкс Адмиралтейский — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/54367-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54367/638841573405810107-a22f27d1-34d1-45b2-afe7-1ef109f942c9",
+        "alt": "Делюкс Адмиралтейский — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/54367-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54367/637195452703513774-4182d865-8445-4fb9-9585-4228a1a4177a",
+        "alt": "Делюкс Адмиралтейский — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/54367-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54367/638841573403207239-a510caba-dfc9-4c75-b152-ea74cfd1d492",
+        "alt": "Делюкс Адмиралтейский — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/54367-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54367/638841614014130970-68809d0c-04dc-4a5c-bc3c-8f7e21cd138a",
+        "alt": "Делюкс Адмиралтейский — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Семейный",
+    "id": "53692",
+    "photos": [
+      {
+        "src": "/assets/rooms/53692-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/800x500/rt/53692/637389659233941101-91a1b6a3-933d-491f-9f16-63642d235924",
+        "alt": "Семейный — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/53692-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53692/637389659219911254-e7078359-357d-4f4c-97d6-65570427fd9a",
+        "alt": "Семейный — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/53692-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53692/637389659239139131-17d1791a-b8d4-4298-b360-64b8b956d7cd",
+        "alt": "Семейный — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/53692-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53692/637389659107592453-f4cda149-3164-4658-b1fb-c5677a067988",
+        "alt": "Семейный — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/53692-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53692/637389659071527527-72d28c5c-df19-46d1-b0cd-a719b4021e8a",
+        "alt": "Семейный — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/53692-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53692/637389659136006594-ac189bf6-36a7-4d48-8d95-703c80939cf7",
+        "alt": "Семейный — фотография 6"
+      }
+    ]
+  },
+  {
+    "name": "Люкс Любимый",
+    "id": "53693",
+    "photos": [
+      {
+        "src": "/assets/rooms/53693-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/53693/637727027541913273-43296b14-687f-41af-a4eb-285f15f2cd0d",
+        "alt": "Люкс Любимый — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/53693-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53693/637727027539853678-76aa937f-cffa-4f04-b5b9-95b1926b0da6",
+        "alt": "Люкс Любимый — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/53693-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53693/637727029298039105-3d653641-0b98-49fd-b178-b17cdfa1a824",
+        "alt": "Люкс Любимый — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/53693-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53693/639058458462782267-64bc8f62-5d6c-430d-80d0-09087cb97771",
+        "alt": "Люкс Любимый — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/53693-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53693/639058457676548112-f9726177-9818-4e87-b466-3dbc9a714c67",
+        "alt": "Люкс Любимый — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/53693-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53693/639058457676515388-f0a6f4aa-e13a-4d9a-86d8-fe785b953f8e",
+        "alt": "Люкс Любимый — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/53693-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53693/639058457252120456-90ebd27d-0d28-4cea-9ced-c35c98e2a0b6",
+        "alt": "Люкс Любимый — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/53693-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/800x500/rt/53693/637727027543916389-81338f61-2e14-469e-9eb9-699fe8e854a8",
+        "alt": "Люкс Любимый — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Люкс Адмиралтейский",
+    "id": "54370",
+    "photos": [
+      {
+        "src": "/assets/rooms/54370-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/800x500/rt/54370/637389706704652606-256b5fe0-5ade-4bb5-af10-3d80152a13ca",
+        "alt": "Люкс Адмиралтейский — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/54370-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54370/637389706396106707-8248ee49-097e-48a2-8f23-b5661f965b18",
+        "alt": "Люкс Адмиралтейский — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/54370-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54370/637389706372291612-34437be6-8c99-4e5d-ad30-10b50dfb4ddf",
+        "alt": "Люкс Адмиралтейский — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/54370-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54370/637389707942296062-fdc72292-ae16-473f-92c8-a1c8c86a9c0f",
+        "alt": "Люкс Адмиралтейский — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/54370-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/800x500/rt/54370/637389706333460422-f8c3c385-2738-4352-a637-6252bf44703a",
+        "alt": "Люкс Адмиралтейский — фотография 5"
+      }
+    ]
+  },
+  {
+    "name": "Люкс City View",
+    "id": "53695",
+    "photos": [
+      {
+        "src": "/assets/rooms/53695-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/53695/637393313558121156-2820a11e-058d-48a2-b036-59da5ac65f62",
+        "alt": "Люкс City View — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/53695-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53695/637393313574459448-af39d049-e32f-43e6-a93a-19cad90b9cf0",
+        "alt": "Люкс City View — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/53695-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53695/637393313591932363-24ff6add-27a4-412a-abd4-0de2d7dd40b0",
+        "alt": "Люкс City View — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/53695-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/53695/637393313597496230-e88d3620-5bf3-4425-9005-45be43953203",
+        "alt": "Люкс City View — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/53695-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53695/637393313666562723-a424fdbb-5244-41f8-a94d-dfd76cf5b943",
+        "alt": "Люкс City View — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/53695-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53695/637727031311769411-a5e7aded-bb0b-40ec-bfa7-65ca633b9c0e",
+        "alt": "Люкс City View — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/53695-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53695/637727031300781480-1cc85b3a-8b1f-40aa-b21a-5cfa245f5475",
+        "alt": "Люкс City View — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/53695-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/53695/637727032314583870-7314d21b-c212-420f-94fd-7a1dfbe04e7c",
+        "alt": "Люкс City View — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Супериор с видом на небо",
+    "id": "73127",
+    "photos": [
+      {
+        "src": "/assets/rooms/73127-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/800x500/rt/73127/638841604531917200-b9752a38-8f9f-438c-b8a1-9ccd1807a606",
+        "alt": "Супериор с видом на небо — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/73127-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/73127/638841604530869211-925b1906-9d70-407e-9357-d4f57e00a664",
+        "alt": "Супериор с видом на небо — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/73127-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/73127/638841604537687690-eb83e839-8148-4e06-935a-0c887c1bc85d",
+        "alt": "Супериор с видом на небо — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/73127-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/73127/638841604535486977-b3bc0eba-3e3f-44b6-9b34-1859839708ca",
+        "alt": "Супериор с видом на небо — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/73127-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/73127/638841604539525666-062dedfe-530e-4d0f-a5ba-1c6dc8bb8e62",
+        "alt": "Супериор с видом на небо — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/73127-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/73127/638841604531917200-745d956e-efeb-4cfd-910c-3d69bf1cbfa5",
+        "alt": "Супериор с видом на небо — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/73127-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/73127/638841604542494476-e40a6d2a-e437-4e74-acfa-e9763297739d",
+        "alt": "Супериор с видом на небо — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/73127-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/73127/638841604544032673-c5afe3b1-8381-443a-bccf-be937022e187",
+        "alt": "Супериор с видом на небо — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Делюкс с видом на небо",
+    "id": "74548",
+    "photos": [
+      {
+        "src": "/assets/rooms/74548-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/800x500/rt/74548/637389654285053713-64eb8a94-e257-48a2-8a10-310199b05855",
+        "alt": "Делюкс с видом на небо — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/74548-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/74548/637389654291734225-329983da-70df-434e-942b-14c658a78bd1",
+        "alt": "Делюкс с видом на небо — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/74548-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/74548/637389656924406248-ddaa1835-73b0-4c18-b2b2-b2629c7cf7a4",
+        "alt": "Делюкс с видом на небо — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/74548-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/74548/637389656926277451-393b1d32-c7ef-4980-8f45-81fee08063b5",
+        "alt": "Делюкс с видом на небо — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/74548-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x500/rt/74548/637389657577847456-e7b6c1be-7eba-4613-84da-45bce63d5375",
+        "alt": "Делюкс с видом на небо — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/74548-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x500/rt/74548/639045367520034956-008f9256-8030-4c50-9b8d-0e9461de20a6",
+        "alt": "Делюкс с видом на небо — фотография 6"
+      }
+    ]
+  },
+  {
+    "name": "Супериор Адмиралтейский",
+    "id": "54365",
+    "photos": [
+      {
+        "src": "/assets/rooms/54365-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/54365/638792150798486895-54a1f854-59a8-4042-af17-40c850432e9a",
+        "alt": "Супериор Адмиралтейский — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/54365-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54365/637159445191573979-3d6087c4-5a98-4d2f-a5a4-9b6b4564c8b3",
+        "alt": "Супериор Адмиралтейский — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/54365-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54365/638792150803499823-5b4a210b-fa5a-47b6-bef4-ebb9fec18ffd",
+        "alt": "Супериор Адмиралтейский — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/54365-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54365/638792150798743718-9ae5e965-63b1-4712-8eca-e6bbb09296c0",
+        "alt": "Супериор Адмиралтейский — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/54365-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54365/638792154707611908-7b1e505f-e708-41c5-a1a2-9fecc11ea852",
+        "alt": "Супериор Адмиралтейский — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/54365-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54365/638792150798986952-6900a304-0b5c-4e76-8df5-cf438263d57b",
+        "alt": "Супериор Адмиралтейский — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/54365-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54365/638792150801160994-3f5d5f8d-0f40-43c9-834e-417ce33d92cd",
+        "alt": "Супериор Адмиралтейский — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/54365-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54365/638792150801945182-ca2952e2-474e-4495-b9ee-0b27952de4c9",
+        "alt": "Супериор Адмиралтейский — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Апартаменты",
+    "id": "54369",
+    "photos": [
+      {
+        "src": "/assets/rooms/54369-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/800x500/rt/54369/637389666433078146-4679ad56-73a9-4a5b-9264-d8f6e99e7b88",
+        "alt": "Апартаменты — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/54369-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54369/637389666408298012-8bdb8d30-80e5-4aaf-8fd6-8c4a47d146d0",
+        "alt": "Апартаменты — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/54369-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54369/637389666422108573-3b48315d-9ee5-45cb-b9ad-7418e543d38d",
+        "alt": "Апартаменты — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/54369-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/54369/637389666443788181-b114240b-cae2-4876-9390-042ca99acc2b",
+        "alt": "Апартаменты — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/54369-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54369/639051533834040454-efcd1a34-6d3c-4c0d-b6b8-c552c1d6ebd0",
+        "alt": "Апартаменты — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/54369-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54369/639051534112634124-51c370b6-45d7-49b7-8030-72d60002bd53",
+        "alt": "Апартаменты — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/54369-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54369/637389666446363021-e06097fd-7e31-4a69-a05d-b13027500a42",
+        "alt": "Апартаменты — фотография 7"
+      },
+      {
+        "src": "/assets/rooms/54369-8.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/54369/636401464325254583-a9fbc552-42be-4672-afca-aae3da8e50a0",
+        "alt": "Апартаменты — фотография 8"
+      }
+    ]
+  },
+  {
+    "name": "Люкс Карла Росси",
+    "id": "79323",
+    "photos": [
+      {
+        "src": "/assets/rooms/79323-1.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/1300x800/rt/79323/638790558278690574-c3fbf913-33c5-40a3-b2e8-53aabf046709",
+        "alt": "Люкс Карла Росси — фотография 1"
+      },
+      {
+        "src": "/assets/rooms/79323-2.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/79323/638790553817045218-3056026e-6b03-4af0-910e-f567e9291f17",
+        "alt": "Люкс Карла Росси — фотография 2"
+      },
+      {
+        "src": "/assets/rooms/79323-3.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/700x400/rt/79323/638790558279107968-01ff03f6-df82-420d-817d-7e5e06012e8d",
+        "alt": "Люкс Карла Росси — фотография 3"
+      },
+      {
+        "src": "/assets/rooms/79323-4.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/79323/638790554434417177-c91582f9-676d-4c91-8abc-eed1aa4f9a3c",
+        "alt": "Люкс Карла Росси — фотография 4"
+      },
+      {
+        "src": "/assets/rooms/79323-5.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/79323/638790554424199689-215b8a88-8428-4bf8-805e-b2fafea82774",
+        "alt": "Люкс Карла Росси — фотография 5"
+      },
+      {
+        "src": "/assets/rooms/79323-6.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/400x300/rt/79323/638790558279328602-a25271ce-b914-4524-b679-e516c41aae5c",
+        "alt": "Люкс Карла Росси — фотография 6"
+      },
+      {
+        "src": "/assets/rooms/79323-7.webp",
+        "sourceUrl": "https://secure.travelline.ru/resource/thumb/800x500/rt/79323/638790554434277781-e6427fd4-6f86-49ff-9a97-2b0dfca7ee9c",
+        "alt": "Люкс Карла Росси — фотография 7"
+      }
+    ]
+  }
+]

@@ -1,0 +1,165 @@
+@layer refinements {
+  html:has(.stay-calendar[open]) { overflow:hidden; }
+  .header-inner { width:calc(100% - 64px); max-width:none; }
+  .header-right { gap:0; }
+  .header-utilities { position:absolute; right:0; top:50%; transform:translateY(-50%); display:flex; align-items:center; gap:14px; }
+  .account-trigger { width:44px; height:44px; display:grid; place-items:center; border-radius:50%; }
+  .account-trigger:hover { background:#eae3d7; color:var(--wine); }
+  .languages { gap:2px; }
+  .languages a { min-width:34px; border-radius:7px; }
+  .languages a[aria-current] { text-decoration:none; background:#e8e0d6; }
+  .languages a:hover { color:var(--wine); background:#e8e0d6; }
+  .account-popover { position:fixed; inset:100px 28px auto auto; margin:0; width:min(375px,calc(100% - 32px)); padding:26px; background:var(--sheet); color:var(--ink); border:0; border-radius:14px; box-shadow:0 18px 70px #302d292a; }
+  .account-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+  .account-heading h2 { font-size:33px; }
+  .account-heading .icon-button { width:34px; height:34px; flex-shrink:0; border:0; }
+  .account-popover>p { font-size:13px; margin-top:18px; }
+  .account-popover>.button { width:100%; margin-top:23px; font-size:12px; }
+  .account-popover>small { display:block; color:var(--muted); font-size:11px; margin-top:14px; line-height:1.7; }
+  .menu-account { display:flex; align-items:center; gap:12px; min-height:48px; font-size:13px; color:var(--wine); }
+  .menu-account .icon:last-child { margin-left:auto; }
+  .menu-phone,.booking-help a,.contact-links>a[href^="tel:"] { font-family:var(--sans); font-variant-numeric:tabular-nums; }
+  .contact-copy>.contact-phone { font:500 clamp(23px,2.3vw,33px)/1.4 var(--sans); letter-spacing:-.025em; font-variant-numeric:tabular-nums; margin:25px 0 19px; }
+
+  .booking-form { padding:20px; border:0; }
+  .hero .booking-form { border:0; }
+  .booking-meta { display:flex; align-items:center; justify-content:space-between; gap:10px 24px; margin-top:8px; min-height:36px; padding-inline:8px; }
+  .booking-caption { text-align:left; font-size:11px; margin:0; color:var(--muted); }
+  .promo-trigger { display:flex; align-items:center; gap:8px; min-height:36px; padding:4px 0; color:var(--wine); font-size:11px; flex-shrink:0; max-width:38%; }
+  .promo-trigger>span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .promo-trigger:hover { text-decoration:underline; text-underline-offset:4px; }
+  .promo-trigger .icon { width:16px; height:16px; }
+  .date-trigger { display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:38px; padding:0; text-align:left; font-size:16px; white-space:nowrap; }
+  .date-trigger .icon,.guest-trigger .icon { width:17px; height:17px; color:var(--muted); }
+  .date-field>span,.guest-field>span { font-size:11px; letter-spacing:0; }
+  .date-trigger:hover,.guest-trigger:hover { color:var(--wine); }
+  .booking-widget-vertical .booking-meta { display:flex; flex-direction:column-reverse; align-items:flex-start; gap:5px; margin-top:8px; padding:0; }
+  .booking-widget-vertical .booking-caption { font-size:10px; text-align:left; margin:0; }
+  .booking-widget-vertical .promo-trigger { max-width:100%; }
+  .booking-widget-vertical .booking-form { padding:0; background:transparent; }
+  .promo-popover { position:fixed; inset:50% auto auto 50%; transform:translate(-50%,-50%); margin:0; width:min(360px,calc(100vw - 32px)); padding:28px; border:0; border-radius:14px; background:var(--sheet); color:var(--ink); box-shadow:0 18px 70px #302d292a; }
+  .promo-popover::backdrop { background:#302d2933; }
+  .promo-popover>label { display:block; font:32px var(--serif); margin-bottom:20px; }
+  .promo-popover>input { display:block; width:100%; min-height:50px; border:1px solid var(--line); border-radius:7px; padding:12px; font-size:16px; background:var(--paper); }
+  .promo-popover>input::placeholder { color:var(--muted); font-size:13px; }
+  .promo-popover>p { margin-top:13px; font-size:12px; color:var(--muted); }
+  .promo-popover>.button { width:100%; margin-top:22px; }
+
+  .stay-calendar { width:min(720px,calc(100vw - 40px)); max-width:none; max-height:calc(100dvh - 40px); padding:28px 32px 24px; border:0; border-radius:16px; margin:auto; background:var(--sheet); color:var(--ink); box-shadow:0 24px 100px #302d293a; overscroll-behavior:contain; scrollbar-width:thin; scrollbar-color:var(--line) var(--sheet); }
+  .stay-calendar::backdrop { background:#28201866; }
+  .calendar-heading { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+  .calendar-heading h2 { font-size:39px; }
+  .calendar-heading .icon-button { flex-shrink:0; border:0; background:var(--paper); }
+  #calendar-help { font-size:12px; color:var(--muted); margin-top:8px; }
+  .calendar-selection { display:grid; grid-template-columns:1fr 26px 1fr; align-items:center; gap:14px; background:var(--paper); padding:10px; border-radius:10px; margin-top:23px; }
+  .calendar-selection button { text-align:left; padding:8px 13px; border-radius:7px; }
+  .calendar-selection button[aria-pressed="true"] { background:var(--sheet); box-shadow:0 4px 16px #302d290d; }
+  .calendar-selection button>span { display:block; font-size:10px; color:var(--muted); }
+  .calendar-selection strong { display:block; font-size:16px; font-weight:600; margin-top:3px; }
+  .calendar-selection>.icon { width:19px; color:var(--muted); }
+  .calendar-navigation { display:flex; justify-content:space-between; height:0; position:relative; top:16px; }
+  .calendar-navigation .icon-button { width:34px; height:34px; border:0; background:var(--paper); z-index:1; }
+  .calendar-navigation .icon { width:17px; height:17px; }
+  .calendar-months { display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:16px; }
+  .calendar-month { table-layout:fixed; border-collapse:separate; border-spacing:0 3px; width:100%; font-variant-numeric:tabular-nums; }
+  .calendar-month caption { font-size:14px; font-weight:600; text-transform:capitalize; padding:4px 32px 16px; height:43px; }
+  .calendar-month th { font-size:10px; font-weight:500; color:var(--muted); height:29px; }
+  .calendar-month td { text-align:center; padding:0; height:39px; }
+  .calendar-month button { display:block; width:100%; min-height:39px; padding:5px 0; border-radius:6px; font-size:12px; }
+  .calendar-month button:hover:not(:disabled) { background:#e5d3d2; color:var(--wine-dark); }
+  .calendar-month button:focus-visible { outline-offset:-2px; }
+  .calendar-month button:disabled { color:var(--muted); opacity:.42; }
+  .calendar-month .is-today { text-decoration:underline; text-underline-offset:5px; font-weight:600; }
+  .calendar-month .in-range,.calendar-month .range-start,.calendar-month .range-end { background:#eee1df; }
+  .calendar-month .range-start { border-radius:6px 0 0 6px; }
+  .calendar-month .range-end { border-radius:0 6px 6px 0; }
+  .calendar-month [aria-pressed="true"],.calendar-month [aria-pressed="true"]:hover:not(:disabled) { background:var(--wine); color:var(--sheet); }
+  .calendar-status { margin-top:14px; min-height:23px; font-size:12px; color:var(--muted); }
+  .calendar-actions { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-top:17px; }
+  .calendar-actions>button:first-child { min-height:44px; padding:8px 0; font-size:12px; color:var(--muted); }
+  .calendar-actions>.button { font-size:12px; min-width:210px; }
+
+  .guest-stories { background:#eee9e0; color:var(--ink); }
+  .stories-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:50px; margin-bottom:38px; }
+  .stories-heading h2 { font-size:56px; max-width:none; }
+  .stories-heading h2 em { color:var(--wine); }
+  .stories-heading p { font-size:14px; color:var(--muted); margin-top:23px; max-width:520px; }
+  .stories-heading>.button { font-size:12px; flex-shrink:0; margin-bottom:4px; }
+  .guest-review-grid { display:grid; grid-template-columns:1.05fr .9fr 1.05fr; gap:18px; align-items:stretch; }
+  .guest-review { display:flex; flex-direction:column; padding:29px; background:var(--sheet); border-radius:13px; min-height:342px; }
+  .guest-review:first-child { background:var(--sage); }
+  .guest-review:nth-child(2) { background:#e9ddcc; }
+  .review-platform { display:flex; justify-content:space-between; align-items:center; gap:16px; font-size:11px; color:var(--muted); min-height:30px; }
+  .review-platform:hover { color:var(--wine); text-decoration:underline; text-underline-offset:4px; }
+  .review-platform .icon { width:17px; height:17px; transform:rotate(-45deg); }
+  .guest-review blockquote { margin:28px 0 30px; font:500 20px/1.55 var(--sans); letter-spacing:-.02em; }
+  .guest-review:nth-child(2) blockquote { font-size:25px; line-height:1.45; }
+  .guest-review figcaption { display:flex; gap:12px; align-items:center; margin-top:auto; }
+  .guest-avatar { width:37px; height:37px; border-radius:50%; background:#dcd2c3; color:var(--ink); display:grid; place-items:center; font-size:13px; font-weight:600; }
+  .guest-review:first-child .guest-avatar { background:#cfd5c5; }
+  .guest-review figcaption strong { display:block; font-size:12px; font-weight:600; }
+  .guest-review figcaption time { display:block; font-size:10px; color:var(--muted); margin-top:2px; }
+  .review-note { font-size:10px; color:var(--muted); margin-top:20px; }
+
+  @media(max-width:1200px) {
+    .header-inner { grid-template-columns:1fr 130px 1fr; }
+    .header .nav,.header .header-right { display:none; }
+    .header .small-brand { grid-column:2; grid-row:1; }
+    .header .menu-toggle { display:flex; grid-column:1; grid-row:1; margin:0; }
+    .header-utilities { right:0; }
+    .stories-heading { gap:30px; }
+    .stories-heading h2 { font-size:46px; }
+    .guest-review { padding:24px; }
+    .guest-review blockquote { font-size:17px; }
+    .guest-review:nth-child(2) blockquote { font-size:22px; }
+  }
+  @media(max-width:760px) {
+    .header-inner { width:calc(100% - 28px); grid-template-columns:1fr 90px 1fr; }
+    .header-utilities { gap:4px; }
+    .languages a { min-width:30px; font-size:10px; }
+    .account-trigger { width:36px; height:44px; }
+    .account-trigger .icon { width:20px; height:20px; }
+    .account-popover { top:79px; right:16px; padding:24px; }
+    .hero { height:770px; }
+    .booking-form { padding:17px 17px 19px; }
+    .booking-meta { flex-direction:column-reverse; gap:0; min-height:0; margin-top:3px; padding:0; align-items:center; }
+    .booking-caption { text-align:center; font-size:9px; max-width:100%; line-height:1.6; }
+    .promo-trigger { font-size:10px; min-height:34px; max-width:100%; }
+    .date-trigger { font-size:14px; min-height:35px; }
+    .date-trigger .icon { width:14px; height:14px; }
+    .date-field>span { font-size:10px; }
+    .guest-field>span { font-size:11px; }
+    .booking-widget-vertical .booking-meta { align-items:flex-start; gap:2px; }
+    .booking-widget-vertical .booking-caption { font-size:10px; }
+    .replay { bottom:327px; }
+    .contact-copy>.contact-phone { font-size:25px; }
+    .stories-heading { display:block; margin-bottom:28px; }
+    .stories-heading h2 { font-size:41px; }
+    .stories-heading p { font-size:13px; margin-top:20px; }
+    .stories-heading>.button { margin-top:22px; min-height:44px; font-size:11px; }
+    .guest-review-grid { grid-template-columns:1fr; gap:12px; }
+    .guest-review { min-height:0; padding:24px; }
+    .guest-review blockquote,.guest-review:nth-child(2) blockquote { font-size:19px; line-height:1.55; margin:20px 0 24px; }
+    .review-note { font-size:9px; }
+  }
+  @media(max-width:640px) {
+    .stay-calendar { width:calc(100vw - 24px); max-height:calc(100dvh - 24px); padding:20px 18px; border-radius:14px; }
+    .calendar-heading h2 { font-size:33px; }
+    .calendar-heading .icon-button { width:36px; height:36px; }
+    #calendar-help { font-size:11px; }
+    .calendar-selection { margin-top:18px; gap:7px; padding:6px; grid-template-columns:1fr 18px 1fr; }
+    .calendar-selection button { padding:8px; }
+    .calendar-selection strong { font-size:14px; }
+    .calendar-months { grid-template-columns:1fr; gap:0; }
+    .calendar-month td,.calendar-month button { min-height:41px; height:41px; }
+    .calendar-month button { font-size:13px; }
+    .calendar-month caption { font-size:14px; }
+    .calendar-status { font-size:11px; }
+    .calendar-actions { gap:15px; }
+    .calendar-actions>.button { min-width:180px; font-size:11px; padding-inline:15px; }
+  }
+}
+
+.vtx-credit{display:inline-flex;align-items:center;justify-content:center;gap:5px;font:400 12px/1.5 system-ui,sans-serif;color:#686159;text-decoration:none;width:max-content;max-width:100%}.vtx-credit .vtx-mark{font-size:15px;font-weight:600;margin-right:3px}.vtx-credit .vtx-name{color:#7C5CFF}.vtx-credit:hover{text-decoration:underline}.vtx-credit:focus-visible{outline:2px solid #7C5CFF;outline-offset:5px}
+
+.footer .vtx-credit{grid-column:1/-1;justify-self:center;margin-top:6px}

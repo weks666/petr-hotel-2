@@ -1,0 +1,54 @@
+import {esc,icon,booking} from './components.mjs';
+import {locale,root,hotelPhotos} from './locales.mjs';
+import {photo,facts,guests,footer,lightbox} from './home.mjs';
+import {comforts,amenityIcon} from './amenities.mjs';
+const pathFor=(r,l)=>`${root(l)}rooms/${r.slug}/`;
+function roomCard(r,l){
+ const t=locale(l);
+ return `<article class="room-card" data-room-card data-capacity="${r.capacity}" data-view="${r.view}" data-kitchen="${r.kitchen}" data-room-count="${r.roomCount}">
+ <a class="card-photo" href="${pathFor(r,l)}" aria-label="${esc(r.name)} — ${t('фотографии и описание','photos and details')}">${photo(r.photos[0])}<span class="photo-badge">${icon('expand')}${r.photos.length} ${t('фото','photos')}</span></a>
+ <div class="card-description"><p class="card-feature">${esc(r.feature)}</p><h2><a href="${pathFor(r,l)}">${esc(r.name)}</a></h2>${facts(r,l)}<p class="card-beds">${icon('bed')}${esc(r.beds)}</p>
+ <div class="card-actions"><a class="text-link" href="${pathFor(r,l)}">${t('Заглянуть в номер','Explore the room')} ${icon('arrow')}</a><a class="button button-outline button-small" href="${pathFor(r,l)}#booking">${t('Выбрать даты','Choose dates')}</a></div></div></article>`;
+}
+export function catalogPage(rooms,l='ru'){
+ const t=locale(l),featured=rooms.find(r=>r.slug==='suite-carlo-rossi');
+ return `<section class="catalog-intro wrap"><nav class="breadcrumbs" aria-label="${t('Навигационная цепочка','Breadcrumbs')}"><a href="${root(l)}">${t('Главная','Home')}</a><span>/</span><span>${t('Номера','Rooms')}</span></nav>
+ <div class="catalog-heading"><div><h1>${t('Ваше место<br>в Петербурге','Your place<br>in St Petersburg')}</h1><p>${t('Номера и люксы — 15 разных характеров. От уютной мансарды до просторной гостиной с видом на Адмиралтейство.','Rooms and suites, each with its own character. From a cosy attic room to a spacious living room overlooking the Admiralty.')}</p><a class="text-link" href="#categories">${t('Найти свой номер','Find your room')}${icon('down')}</a></div>
+ <a class="catalog-cover" href="${pathFor(featured,l)}">${photo(featured.photos[0]).replace('loading="lazy"','fetchpriority="high"')}<span>${esc(featured.name)}${icon('arrow')}</span></a></div>
+ ${booking('booking',{lang:l})}
+ <div id="categories" class="catalog-filters" aria-label="${t('Фильтры номеров','Room filters')}"><label>${t('Вместимость','Capacity')}<select data-filter="capacity"><option value="0">${t('Любая','Any')}</option>${[2,3,4].map(n=>`<option value="${n}">${t(`От ${n} гостей`,`${n} guests or more`)}</option>`).join('')}</select></label><label>${t('Вид из окон','Window view')}<select data-filter="view"><option value="all">${t('Все варианты','All views')}</option><option value="admiralty">${t('Адмиралтейство и сад','Admiralty and garden')}</option><option value="courtyard">${t('Во внутренний двор','Courtyard')}</option><option value="sky">${t('На небо','Sky')}</option><option value="city">${t('Гороховая улица','Gorokhovaya Street')}</option></select></label><label class="check-filter"><input type="checkbox" data-filter="kitchen"> ${t('С кухней','With a kitchen')}</label><label class="check-filter"><input type="checkbox" data-filter="rooms"> ${t('Две комнаты','Two rooms')}</label><button class="filter-reset" data-reset-filters>${t('Сбросить','Reset')}</button></div><p class="result-count" aria-live="polite" data-result-count>${t('Показаны все 15 категорий','Showing all 15 categories')}</p></section>
+ <section class="wrap catalog-grid" aria-label="${t('Категории номеров','Room categories')}">${rooms.map(r=>roomCard(r,l)).join('')}<div class="no-results" hidden data-no-results><h2>${t('Такого сочетания пока нет','No matching rooms')}</h2><p>${t('Попробуйте убрать один из фильтров или посмотрите все категории.','Try removing a filter or explore all categories.')}</p><button class="button button-outline" data-reset-filters>${t('Показать все номера','Show all rooms')}</button></div></section>
+ <div class="wrap catalog-note"><p>${t('Фильтры помогают сравнить категории. Наличие, стоимость и допустимое размещение на выбранные даты уточняются в официальной системе.','Filters help you compare categories. Availability, rates and occupancy for your dates are confirmed in the official booking system.')}</p></div>${footer(l)}`;
+}
+function roomGallery(r,l){
+ const t=locale(l);
+ // Show different spaces up front, while preserving every source photograph.
+ const secondary=r.photos.map((p,i)=>({p,i})).filter(x=>x.i>0);
+ const detail=secondary.find(x=>/Ванная|Кухня|Мини-кухня|Вид из окна|Гостиная|Bathroom|Kitchen|Window view|Living room/.test(x.p.caption))||secondary[0];
+ const other=secondary.find(x=>x.i!==detail.i)||secondary[1];
+ return `<section id="room-photos" class="gallery room-gallery" aria-label="${t('Фотографии номера','Room photographs')}" data-gallery="${r.id}">
+ <div class="room-gallery-grid"><div class="gallery-stage"><button class="gallery-open" aria-label="${t('Открыть фотографию на весь экран','Open full-screen photo')}">${photo(r.photos[0]).replace('loading="lazy"','fetchpriority="high"')}<span class="expand-label">${icon('expand')}${t('Все фотографии','All photographs')} · ${r.photos.length}</span></button><div class="photo-arrows"><button class="icon-button" data-photo-prev aria-label="${t('Предыдущая фотография','Previous photo')}">${icon('left')}</button><span class="photo-count" aria-live="polite">1 / ${r.photos.length}</span><button class="icon-button" data-photo-next aria-label="${t('Следующая фотография','Next photo')}">${icon('arrow')}</button></div></div>
+ <div class="gallery-peeks">${[other,detail].map(({p,i})=>`<button class="gallery-peek" data-gallery-open-index="${i}" aria-label="${esc(p.caption)} — ${t('открыть фото','open photo')}">${photo(p).replace('loading="lazy"','loading="eager"')}<span>${esc(p.caption)}${icon('expand')}</span></button>`).join('')}</div></div>
+ <div class="gallery-bottom"><p class="gallery-caption" aria-live="polite">${esc(r.photos[0].caption)}</p><a href="#room-comfort">${t('Удобства номера','Room amenities')}${icon('down')}</a></div>
+ <div class="gallery-thumbs" aria-label="${t('Выбрать фотографию','Choose a photo')}">${r.photos.map((p,i)=>`<button aria-label="${esc(p.caption)}" data-photo-index="${i}" aria-pressed="${!i}">${photo(p)}</button>`).join('')}</div></section>`;
+}
+function hospitality(l){
+ const t=locale(l),reception=hotelPhotos(l)[1];
+ return `<section class="room-hospitality" id="room-service"><div class="hospitality-photo">${photo(reception)}<span>${t('Всегда рады помочь','Here to help, around the clock')}</span></div><div class="hospitality-copy"><h2>${t('Остальное —<br>наша забота','Let us take care<br>of the details')}</h2><ul><li>${amenityIcon('bell')}<div><strong>${t('На связи круглосуточно','Here for you, 24/7')}</strong><p>${t('Стойка регистрации, помощь консьержа и хранение багажа.','Reception, concierge assistance and luggage storage.')}</p></div></li><li>${amenityIcon('car')}<div><strong>${t('Встреча и трансфер','Meet-and-greet transfers')}</strong><p>${t('По предварительному запросу, за отдельную плату.','By prior arrangement, at an additional charge.')}</p></div></li><li>${amenityIcon('passport')}<div><strong>${t('Визовая поддержка','Visa support')}</strong><p>${t('Поможем с оформлением приглашения. Услуга платная.','Assistance with your visa invitation, at an additional charge.')}</p></div></li></ul><a class="text-link" href="${root(l)}#services">${t('Все услуги отеля','All hotel services')}${icon('arrow')}</a></div></section>`;
+}
+export function roomPage(r,rooms,l='ru'){
+ const t=locale(l),related=rooms.filter(x=>x.id!==r.id).sort((a,b)=>Math.abs(a.capacity-r.capacity)-Math.abs(b.capacity-r.capacity)).slice(0,2);
+ return `<article class="room-page wrap" data-room-page="${r.id}">
+ <nav class="breadcrumbs" aria-label="${t('Навигационная цепочка','Breadcrumbs')}"><a href="${root(l)}">${t('Главная','Home')}</a><span>/</span><a href="${root(l)}rooms/">${t('Номера','Rooms')}</a><span>/</span><span>${esc(r.name)}</span></nav>
+ <div class="room-title"><div><h1>${esc(r.name)}</h1><p>${esc(r.feature)}</p></div><a class="button button-outline" href="#booking">${t('Выбрать даты','Choose dates')}${icon('arrow')}</a></div>
+ ${roomGallery(r,l)}
+ <div class="room-layout"><div class="room-main">
+ <nav class="room-sections" aria-label="${t('Об этом номере','About this room')}"><a href="#room-overview">${t('О номере','Overview')}</a><a href="#room-comfort">${t('Удобства','Amenities')}</a><a href="#room-service">${t('Сервис','Services')}</a><a href="#room-details">${t('Условия','Good to know')}</a></nav>
+ <section id="room-overview" class="room-overview"><h2>${t('Здесь можно<br>быть собой','Make yourself<br>at home')}</h2><div class="room-overview-copy">${facts(r,l)}<p class="room-prose">${esc(r.description)}</p><p class="room-bed">${icon('bed')}<span>${esc(r.beds)}</span></p></div></section>
+ <section class="room-comfort" id="room-comfort"><h2>${t('Комфорт в деталях','Comfort in every detail')}</h2>${comforts(r.amenities,l)}</section>
+ ${hospitality(l)}
+ <section class="room-details" id="room-details"><h2>${t('Полезно перед поездкой','Good to know before you arrive')}</h2><div class="room-category-note">${amenityIcon('info')}<p>${esc(r.note)}</p></div><p class="room-photo-note">${t('Фотографии показывают варианты внутри категории. Конкретный номер и выполнение особых пожеланий отель не гарантирует.','Photographs show different versions of the category. The hotel cannot guarantee a particular room or fulfilment of special requests.')}</p><a class="text-link" href="tel:+78124094995">${icon('phone')}${t('Обсудить пожелания с отелем','Discuss your wishes with the hotel')}</a></section>
+ </div><aside class="room-booking"><h2>${t('Погостите у нас','Be our guest')}</h2><p>${t('Выберите даты своего Петербурга','Choose your dates in St Petersburg')}</p>${booking('booking',{room:r.id,vertical:true,label:t('Проверить наличие','Check availability'),lang:l})}<div class="room-check-times"><span>${t('Заезд','Check-in')} <strong>14:00</strong></span><span>${t('Выезд','Check-out')} <strong>12:00</strong></span></div><p class="booking-help">${t('Поможем с выбором','Let us help you choose')}<br><a href="tel:+78124094995">+7 (812) 409-49-95</a></p></aside></div>
+ </article><section class="section related-section wrap"><div class="section-head"><h2>${t('Ещё немного вдохновения','A little more inspiration')}</h2><a class="text-link" href="${root(l)}rooms/">${t('Все номера','All rooms')} ${icon('arrow')}</a></div><div class="related-grid">${related.map(x=>roomCard(x,l)).join('')}</div></section>
+ <div class="mobile-room-action"><span>${esc(r.name)}<small>${r.area} ${t('м²','m²')} · ${guests(r,l)}</small></span><a class="button button-small" href="#booking">${t('Выбрать даты','Choose dates')}</a></div>${lightbox(r.name,r.photos[0],l)}${footer(l)}`;
+}
