@@ -1,0 +1,29 @@
+{
+  "source": "TravelLine Booking Engine",
+  "sourceUrl": "https://petr-hotel.com/ru/rubook.html?date=2026-10-06&nights=2&adults=1&children=0",
+  "checkedAt": "2026-09-29",
+  "arrival": "2026-10-06",
+  "departure": "2026-10-08",
+  "nights": 2,
+  "adults": 1,
+  "children": 0,
+  "currency": "RUB",
+  "unit": "minimum_total_for_stay",
+  "rooms": {
+    "53687": {"amount": 22000, "status": "available"},
+    "53688": {"amount": 24000, "status": "available"},
+    "53689": {"amount": 26000, "status": "available"},
+    "54366": {"amount": 28400, "status": "available"},
+    "53691": {"amount": 26000, "status": "available"},
+    "54367": {"amount": 31400, "status": "available"},
+    "54370": {"amount": 43400, "status": "available"},
+    "53692": {"amount": null, "status": "sold_out"},
+    "73127": {"amount": null, "status": "sold_out"},
+    "74548": {"amount": null, "status": "sold_out"},
+    "54365": {"amount": null, "status": "sold_out"},
+    "54369": {"amount": null, "status": "sold_out"},
+    "53693": {"amount": null, "status": "not_offered"},
+    "53695": {"amount": null, "status": "not_offered"},
+    "79323": {"amount": null, "status": "not_offered"}
+  }
+}

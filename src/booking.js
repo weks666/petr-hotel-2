@@ -16,6 +16,8 @@ try {
     if(typeof saved.promo==='string')stay.promo=saved.promo.slice(0,64);
   }
 }catch{}
+const query=new URLSearchParams(location.search);
+if(query.has('date')){const arrival=query.get('date'),count=Number(query.get('nights'));if(Number.isInteger(count)&&count>=1&&count<=90&&validRange(arrival,addDays(arrival,count),today())){stay.in=arrival;stay.out=addDays(arrival,count);const adults=Number(query.get('adults'));if(adults>=1&&adults<=4)stay.adults=adults;stay.ages=[];stay.promo='';}}
 function save(){try{sessionStorage.setItem(key,JSON.stringify(stay));}catch{}}
 const adultLabel=n=>t(n===1?'1 взрослый':`${n} взрослых`,`${n} ${n===1?'adult':'adults'}`);
 function agesUI(f){$('[data-child-ages]',f).innerHTML=stay.ages.map((age,i)=>`<label>${t('Возраст ребёнка','Child’s age')} ${i+1}<select data-age="${i}" aria-label="${t('Возраст ребёнка','Child’s age')} ${i+1}">${Array.from({length:7},(_,n)=>`<option value="${n}" ${n===age?'selected':''}>${n} ${t(n===1?'год':n<5&&n>0?'года':'лет',n===1?'year':'years')}</option>`).join('')}</select></label>`).join('');}

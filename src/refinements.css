@@ -165,9 +165,8 @@
 .footer .vtx-credit{grid-column:1/-1;justify-self:center;margin-top:6px}
 
 /* Compatibility panels: never rely on native popover visibility. */
-[data-popup][hidden],.popup-backdrop[hidden]{display:none!important}
+[data-popup][hidden]{display:none!important}
 [data-popup]{z-index:1001;max-height:calc(100svh - 32px);overflow:auto}
-.popup-backdrop{position:fixed;inset:0;z-index:1000;background:#302d2944}
 @supports not (height:100svh){[data-popup]{max-height:calc(100vh - 32px)}}
 
 [data-popup]::backdrop{background:#302d2955}

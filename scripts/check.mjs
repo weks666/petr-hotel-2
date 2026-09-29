@@ -1,3 +1,4 @@
+import './check-rates.mjs';
 import {readdir,readFile,stat,writeFile,mkdir} from 'node:fs/promises';
 import path from 'node:path';
 import {basePath} from './paths.mjs';

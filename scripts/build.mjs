@@ -1,3 +1,4 @@
+import {rateCard} from '../src/rates.mjs';
 import {writeFile,copyFile,mkdir,readFile,cp} from 'node:fs/promises';
 import {basePath,rebaseHtml,rebaseCss,rebaseData} from './paths.mjs';
 import {shell} from '../src/components.mjs';
@@ -8,13 +9,13 @@ import {amenitySpecimen} from '../src/amenities.mjs';
 import {englishRooms,allPhotos,locale} from '../src/locales.mjs';
 const ru=JSON.parse(await readFile('src/data/rooms.json','utf8'));
 await mkdir('dist/assets',{recursive:true});await cp('public','dist',{recursive:true});
-for(const f of ['main.js','hero.js','booking.js','calendar.js','stay-dates.js','popups.js'])await copyFile(`src/${f}`,`dist/assets/${f}`);
-await writeFile('dist/assets/styles.css',rebaseCss((await Promise.all(['styles.css','layout.css','redesign.css','refinements.css','rooms.css'].map(f=>readFile('src/'+f,'utf8')))).join('\n')));
+for(const f of ['main.js','hero.js','booking.js','calendar.js','stay-dates.js','popups.js','requests.js'])await copyFile(`src/${f}`,`dist/assets/${f}`);
+await writeFile('dist/assets/styles.css',rebaseCss((await Promise.all(['styles.css','layout.css','redesign.css','refinements.css','rooms.css','revision.css'].map(f=>readFile('src/'+f,'utf8')))).join('\n')));
 await writeFile('dist/assets/favicon.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" fill="#722f3a"/><path d="M11 31V9h18v22M16 31V13h8v18" fill="none" stroke="#f6f2e9" stroke-width="2"/></svg>');
 for(const lang of ['ru','en']){
  const rooms=lang==='ru'?ru:englishRooms(ru),t=locale(lang),prefix=lang==='en'?'en/':'';
  async function page(route,title,body,options={}){let dir=`dist/${prefix}${route}`;await mkdir(dir,{recursive:true});await writeFile(dir+'index.html',rebaseHtml(shell(title,body,{...options,lang,route:'/'+route})));}
- await writeFile(`dist/assets/rooms${lang==='en'?'.en':''}.json`,rebaseData(rooms));
+ await writeFile(`dist/assets/rooms${lang==='en'?'.en':''}.json`,rebaseData(rooms.map(r=>({...r,rate:rateCard(r.id,lang)}))));
  await writeFile(`dist/assets/gallery.${lang}.json`,rebaseData(allPhotos(rooms,lang)));
  await page('',t('Петръ Отель — ваш Петербург начинается здесь','Petr Hotel — your St Petersburg begins here'),homePage(rooms,lang),{home:true});
  await page('gallery/',t('Фотогалерея — Петръ Отель','Photo gallery — Petr Hotel'),galleryPage(rooms,lang));
