@@ -2,7 +2,7 @@
 
 Презентационный сайт с акварельным первым экраном, русской и английской версиями, 15 категориями номеров и галереей из 125 фотографий.
 
-Демо: https://weks666.github.io/hotel-watercolor-concept/
+Демо: https://weks666.github.io/petr-hotel-2/
 
 ## Локальный запуск
 
@@ -22,7 +22,7 @@ Push в main запускает сборку, проверки и публика
 Аналогичная сборка для GitHub Pages в PowerShell:
 
 ```powershell
-$env:BASE_PATH='/hotel-watercolor-concept'
+$env:BASE_PATH='/petr-hotel-2'
 $env:PUBLIC_DEMO='1'
 npm run build
 npm run check
